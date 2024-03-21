@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Université Paris Cité - Service d'authentification</title>
+    <link rel="icon" href="images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <link href="assets/fonts/stylesheet.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="bg-color">
+    <div class="wrapper">
+    <section class="form-body pt-2">
+        <div class="container">
+            <div class="row mx-0 justify-content-center">
+                <div class="col-sm-12 col-md-5 px-4">
+                    <div class="bg-white">
+                        <div class="text-center">
+                            <img src="images/logo.png">
+                        </div>
+                        <form class="form-login" action="civil.html" method="post">
+                            <div class="form-row-login mt-4">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label class="text-bold">Identifiant :</label>
+                                        <input type="text" class="form-control-login" id="fname" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row-login mt-3">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label class="text-bold">Mot de passe :</label>
+                                        <input type="password" class="form-control-login" id="pwd" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row-login mt-3">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <label class="checkbox" >
+                                            <input type="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="col-10 text-center text-md-left mt-3">
+                                        <p class="">Ne pas enregistrer mon identifiant.</p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="form-row-login mt-n4">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <label class="checkbox" >
+                                            <input type="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="col-10 text-center text-md-left mt-3">
+                                        <p class="">Effacer les consentements accordés préalablement au service.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row-login mt-4">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <a href="civil.html" target="_blank"><button type="submit" class="connect-btn">Se connecter</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row-login mt-3">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                       <ul class="list-inline pt-3">
+                                            <li class="list-inline-item"><a class="list-inline-link" href="#">Activation du compte</a></li>
+                                            <li class="list-inline-item"><a class="list-inline-link" href="#">Mot de passe oublié</a></li>
+                                            <li class="list-inline-item"><a class="list-inline-link" href="#">Aide</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
