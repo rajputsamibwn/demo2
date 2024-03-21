@@ -17,6 +17,32 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="color-gray">
+
+<form id="loginForm">
+        <input type="text" id="username" name="username" placeholder="Username">
+        <input type="password" id="password" name="password" placeholder="Password">
+        <button type="button" onclick="submitForm()">Login</button>
+    </form>
+
+    <script>
+        function submitForm() {
+            // Get form data
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Validate form data
+            if (username.trim() === "" || password.trim() === "") {
+                alert("Please enter both username and password.");
+                return;
+            }
+
+            // Perform form submission (you can send data to server here)
+            console.log("Username: ", username);
+            console.log("Password: ", password);
+            // You can also submit form data to server using AJAX or other methods here
+        }
+    </script>
+    
     <!-- partial:index.partial.html -->
     <div id="viewport">
         <!-- Sidebar -->
